@@ -9,3 +9,9 @@ If batches were genotyped on different arrays, run marker match on array manifes
 Cluster samples in Illumina GenomeStudio.
 
 ## References
+<sup>1</sup>  
+<sup>2</sup>  
+<sup>3</sup>  
+<sup>4</sup>  
+<sup>5</sup>  
+<sup>6</sup>  
