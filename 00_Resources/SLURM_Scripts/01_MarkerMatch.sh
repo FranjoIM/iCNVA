@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=MarkerMatch
+#SBATCH --job-name=01_MarkerMatch
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=njofrica@ufl.edu
 #SBATCH --ntasks=1
 #SBATCH --mem=15gb
 #SBATCH --time=10:00:00
-#SBATCH --output=/00_Resources/SLURM_Logs/01-MarkerMatch.log
+#SBATCH --output=/blue/carolmathews/njofrica/CNV_TRIO/00_Resources/SLURM_Logs/LOG_%j-%x.log
 
 date; hostname; pwd
 WorkDir=$(pwd)
