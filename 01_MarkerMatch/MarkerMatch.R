@@ -166,7 +166,7 @@ for(i in 1:length(Fil){
                 eol="\n")
   
   png(file=paste0(Out, "MatchedDist_", gsub(".csv","",Refer), "_", gsub(".csv","",Fil[i]),".txt", collapse = ""),
-     width=600, height=350)
+     width=800, height=550)
   hist(MatchedDF$Distance[MatchedDF$Distance>0], 
      breaks=100, 
      main=paste0("Distribution of non-idential matches from \n",
