@@ -7,6 +7,7 @@
 #SBATCH --time=05:00:00                     # Walltime
 
 date; hostname; pwd
+WorkDir=$(pwd)
 
 # Create holding directory --------------------------------------------
 mkdir -p ${WorkDir}/01_MarkerMatch/Outputs
@@ -15,4 +16,8 @@ mkdir -p ${WorkDir}/01_MarkerMatch/Outputs
 module load R/4.1
 
 # Run R Marker Match script ------------------------------------------- 
-Rscript myRscript.R
+Rscript ${WorkDir}/01_MarkerMatch/MarkerMatch.R
+  --ref
+  --mat
+  --dist
+  --out
