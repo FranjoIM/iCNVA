@@ -6,11 +6,10 @@
 
 # Load packages ------------------------------------------------------------------------------------------------------------------------
 
-suppressMessages({
-  require(optparse, quietly = TRUE)
-  require(readr, quietly = TRUE)
-  require(dplyr, quietly = TRUE
-})
+suppressMessages({require(optparse, quietly = TRUE)})
+suppressMessages({require(readr, quietly = TRUE)})
+suppressMessages({require(tidyr, quietly = TRUE)})
+suppressMessages({require(dplyr, quietly = TRUE)})
 
 # Parse input --------------------------------------------------------------------------------------------------------------------------
 
@@ -134,12 +133,12 @@ Matched ", length(unique(DF$Name.x)), " SNPs on reference and ", length(unique(D
 
 Fil <- list.files(path = Match)
 if (!endsWith(Refer, ".csv")) {Refer <- paste0(Refer, ".csv", collapse = "")}
-Fil <- Fil[!grepl("GSA", Refer)]
+Fil <- Fil[!grepl(Refer, Fil)]
 
 if (!endsWith(Match, "/")) {Match <- paste0(Match, "/", collapse = "")}
 if (!endsWith(Out, "/")) {Out <- paste0(Out, "/", collapse = "")}
 
-for(i in 1:length(Fil){
+for(i in 1:length(Fil)){
   Reference <- LoadManifest(File = paste0(Match, Refer, collapse = ""))
   Matching <- LoadManifest(File = paste0(Match, Fil[i], collapse = ""))
 
@@ -165,7 +164,7 @@ for(i in 1:length(Fil){
                 quote="none",
                 eol="\n")
   
-  png(file=paste0(Out, "MatchedDist_", gsub(".csv","",Refer), "_", gsub(".csv","",Fil[i]),".txt", collapse = ""),
+  png(file=paste0(Out, "MatchedDist_", gsub(".csv","",Refer), "_", gsub(".csv","",Fil[i]),".png", collapse = ""),
      width=800, height=550)
   hist(MatchedDF$Distance[MatchedDF$Distance>0], 
      breaks=100, 
