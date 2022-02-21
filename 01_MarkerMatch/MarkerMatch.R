@@ -156,7 +156,7 @@ for(i in 1:length(Fil)){
                 
   Matching %>%
     select(Name) %>%
-    mutate(Keep = ifelse(Name %in% PruneMat$Name.x, 1, 0)) %>%
+    mutate(Keep = ifelse(Name %in% PruneMat$Name.y, 1, 0)) %>%
     write_delim(file=paste0(Out, "MatchDist_", gsub(".csv","",Fil[i]), ".txt", collapse = ""),
                 delim="\t",
                 na="",
