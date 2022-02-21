@@ -106,7 +106,7 @@ Found ", nrow(PerfectMatch), " matches at distance = 0.")
         if(nrow(Match) > 0) {
           DF <- rbind(DF, Match)
         }
-        Mat <- Mat %>% filter(!Name %in% Match$Name.x)
+        Mat <- Mat %>% filter(!Name %in% Match$Name.y)
       }
       
       n <- n+nrow(Match)
