@@ -9,7 +9,7 @@ If batches were genotyped on different arrays, run marker match on array manifes
 Cluster samples in Illumina GenomeStudio.
 
 ## References
-1. Doi: Ivankovic, F. (nd). Marker match. Unpublished. Doi: [NA](#)  
+1. Ivankovic, F. (nd). Marker match. Unpublished. Doi: [NA](#)  
 2. Zhang, Z., Cheng, H., Hong, X., Di Narzo, A.F., Franzen, O., Peng, S., ... & Hao, K. (2019). EnsembleCNV: an ensemble machine learning algorithm to identify and genotype copy number variation using SNP array data. *Nucleic Acids Research*, 47(7), e39. Doi: [10.1093/nar/gkz068](https://doi.org/10.1093/nar/gkz068)  
 3. Wang, K., Li, M., Hadley, D., Liu, R., Glessner, J., Grant, S.F., ... & Bucan, M. (2007). PennCNV: An integrated hidden Markov model designed for high-resolution copy number variation detection in whole-genome SNP genotyping data. *Genome Research*, 17(11), 1665-74. Doi: [10.1101/gr.6861907](https://doi.org/10.1101/gr.6861907)  
 4. Colella, S., Yau, C., Taylor, J.M., Mirza, G., Butler, H., Clouston, P., ... & Ragoussis, J. (2007). QuantiSNP: an Objective Bayes Hidden-Markov Model to detect and accurately map copy number variation using SNP genotyping data. *Nucleic Acids Research*, 35(6), 2013-25. Doi: [10.1093/nar/gkm076](https://doi.org/10.1093/nar/gkm076)  
