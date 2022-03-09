@@ -12,6 +12,12 @@ sbatch ${WorkDir}/00_Resources/SLURM_Scripts/01_MarkerMatch.sh
 ## Sample Clustering
 Cluster samples in Illumina GenomeStudio.
 
+## Extract FinalReport files
+```bash
+WorkDir=$(pwd)
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/UnpackFinalReports.sh
+```
+
 ## References
 1. Ivankovic, F. (nd). Marker match. Unpublished. Doi: [NA](#)  
 2. Zhang, Z., Cheng, H., Hong, X., Di Narzo, A.F., Franzen, O., Peng, S., ... & Hao, K. (2019). EnsembleCNV: an ensemble machine learning algorithm to identify and genotype copy number variation using SNP array data. *Nucleic Acids Research*, 47(7), e39. Doi: [10.1093/nar/gkz068](https://doi.org/10.1093/nar/gkz068)  
