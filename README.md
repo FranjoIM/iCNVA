@@ -4,6 +4,10 @@ iCNVA is an integratad CNV analysis pipeline, intended for a seamless analysis w
 
 ## Marker Match
 If batches were genotyped on different arrays, run marker match on array manifests to get concensus markers for CNV analysis. 
+```bash
+WorkDir=$(pwd)
+sbatch ${WorkDir}/00_Resources/SLURM_Scripts/01_MarkerMatch.sh
+```
 
 ## Sample Clustering
 Cluster samples in Illumina GenomeStudio.
