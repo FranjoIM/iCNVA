@@ -21,6 +21,8 @@ sbatch ${WorkDir}/02_InitialCalling/FinalReport/UnpackFinalReports.sh
 ## Process FinalReport files
 ```bash
 WorkDir=$(pwd)
+
+# Extract LRR and BAF info
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.1.sh
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.2.sh
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.3.sh
@@ -28,7 +30,7 @@ sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.4.sh
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessASD1.1.sh
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessASD1.2.sh
 
-# After the runs are done
+# Convert TAB to RDS
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/ToRDS_TS1.1.sh
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/ToRDS_TS1.2.sh
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/ToRDS_TS1.3.sh
