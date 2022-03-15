@@ -23,12 +23,12 @@ sbatch ${WorkDir}/02_InitialCalling/FinalReport/UnpackFinalReports.sh
 WorkDir=$(pwd)
 
 # Extract LRR and BAF info
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.1.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.2.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.3.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.4.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessASD1.1.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessASD1.2.sh
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/Process_TS_1.1.sh
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/Process_TS_1.2.sh
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/Process_TS_1.3.sh
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/Process_TS_1.4.sh
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/Process_ASD_1.1.sh
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/Process_ASD_1.2.sh
 ```
 
 ## References
