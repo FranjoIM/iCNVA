@@ -18,6 +18,17 @@ WorkDir=$(pwd)
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/UnpackFinalReports.sh
 ```
 
+## Process FinalReport files
+```bash
+WorkDir=$(pwd)
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.1.sh
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.2.sh
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.3.sh
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.4.sh
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessASD1.1.sh
+sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessASD1.2.sh
+```
+
 ## References
 1. Ivankovic, F. (nd). Marker match. Unpublished. Doi: [NA](#)  
 2. Zhang, Z., Cheng, H., Hong, X., Di Narzo, A.F., Franzen, O., Peng, S., ... & Hao, K. (2019). EnsembleCNV: an ensemble machine learning algorithm to identify and genotype copy number variation using SNP array data. *Nucleic Acids Research*, 47(7), e39. Doi: [10.1093/nar/gkz068](https://doi.org/10.1093/nar/gkz068)  
