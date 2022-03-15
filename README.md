@@ -29,22 +29,6 @@ sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.3.sh
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessTS1.4.sh
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessASD1.1.sh
 sbatch ${WorkDir}/02_InitialCalling/FinalReport/ProcessASD1.2.sh
-
-# Convert TAB to RDS
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ToRDS_TS1.1.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ToRDS_TS1.2.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ToRDS_TS1.3.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ToRDS_TS1.4.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ToRDS_ASD1.1.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/ToRDS_ASD1.2.sh
-
-# Prepare Files for Callers
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/PrepareTS1.1.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/PrepareTS1.2.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/PrepareTS1.3.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/PrepareTS1.4.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/PrepareASD1.1.sh
-sbatch ${WorkDir}/02_InitialCalling/FinalReport/PrepareASD1.2.sh
 ```
 
 ## References
