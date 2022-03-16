@@ -12,7 +12,7 @@ path_wkdir <- args[1]
 project_name <- args[2]
 
 ## path to the directory for running iPattern
-path_run_ipattern <- file.path(path_wkdir, "01_initial_call", "run_iPattern")
+path_run_ipattern <- file.path(path_wkdir, "run_iPattern")
 
 ##--------------------------------------------------------------------------------
 ## 1) data_file: list of splitted final report files for each sample
