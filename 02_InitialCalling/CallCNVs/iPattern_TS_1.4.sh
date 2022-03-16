@@ -47,7 +47,9 @@ SNPpos="/blue/carolmathews/njofrica/CNV_TRIO/02_InitialCalling/Files/${BATCH}/ru
 #-----------------------------------------------------------------------------------------------------------------
 
 PROJECT_NAME=${BATCH}
-Rscript /blue/carolmathews/njofrica/CNV_TRIO/02_InitialCalling/CallCNVs/prepare_input_files_for_iPattern.R ${workdir} ${PROJECT_NAME}
+Rscript /blue/carolmathews/njofrica/CNV_TRIO/02_InitialCalling/CallCNVs/prepare_input_files_for_iPattern.R \
+  /blue/carolmathews/njofrica/CNV_TRIO/02_InitialCalling/Files/${BATCH}/ \
+  ${PROJECT_NAME}
 
 ${IPNBASE}/ipn_0.582/preprocess/ilmn/ilmn_run.py \
 --data-file-list   ${workdir}/data_aux/${PROJECT_NAME}_data_file.txt \
