@@ -38,7 +38,7 @@ SNPpos="/blue/carolmathews/njofrica/CNV_TRIO/02_InitialCalling/Files/${BATCH}/ru
 #-----------------------------------------------------------------------------------------------------------------
 
 # Create a list of SNPs
-awk '$2>0 && $2<23 {print}' \
+awk '{ if((NR == 1) || ($2 >= 1 && $2 <= 22)) { print } }' \
   /blue/carolmathews/njofrica/CNV_TRIO/02_InitialCalling/Files/${BATCH}/IntensityMatrices/SNP_pos.txt > \
   ${SNPpos}
 
